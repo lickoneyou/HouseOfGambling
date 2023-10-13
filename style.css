@@ -14,6 +14,7 @@ html {
 
 body {
   background: #110a1d;
+  position: relative;
 }
 
 a {
@@ -130,7 +131,7 @@ li > a:focus:after {
 
 main {
   position: relative;
-  height: 1048px;
+  height: 1025px;
   overflow: hidden;
 }
 
@@ -142,6 +143,7 @@ main {
   justify-content: space-between;
   align-items: flex-end;
   z-index: -10;
+  top: 0;
 }
 
 .layerRight {
@@ -177,7 +179,7 @@ main {
   overflow: hidden;
   position: relative;
   width: 10.0368rem;
-  height: 129.822rem;
+  height: 110.822rem;
   user-select: none;
 }
 .slider::before,
@@ -332,7 +334,17 @@ main {
 
 .postDate {
   font-family: FuturaPT-Light;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 450;
-  line-height: 16px;
+  line-height: 1.6rem;
+}
+
+/* footer */
+
+footer {
+  padding: 40px 140px 24px 140px;
+  border-radius: 64px 64px 0px 0px;
+  border-top: 4px solid #478bf9;
+  border-right: 4px solid #478bf9;
+  border-left: 4px solid #478bf9;
 }
