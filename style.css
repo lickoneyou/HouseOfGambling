@@ -105,6 +105,8 @@ li > a:focus:after {
   font-weight: 400;
   line-height: 20px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .logIn {
