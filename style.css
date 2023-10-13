@@ -1,0 +1,95 @@
+html {
+  width: 1920px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  font-family: "Lexend", sans-serif;
+  font-size: 10px;
+  color: #fff;
+}
+
+body {
+  background: #110a1d;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  padding: 1.6rem 14rem 0 14rem;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  border-radius: 6.4rem;
+  border: 0.4rem solid #478bf9;
+  padding: 2.4rem 4.8rem;
+}
+
+.logoWrapper {
+  width: 28.7rem;
+  height: 3.2rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 58.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.btnsWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 28.7rem;
+  user-select: none;
+}
+
+.lang {
+  display: flex;
+  padding: 1.4rem;
+  border-radius: 24rem;
+  border: 0.2rem solid #9dadf2;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 7.5rem;
+}
+
+.langEn,
+.langRu {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.langEn *:first-child,
+.langRu *:first-child {
+  margin-right: 0.8rem;
+}
+
+.logIn,
+.singUp {
+  padding: 1.4rem;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.logIn {
+  border: 0.2rem solid #9dadf2;
+}
+
+.singUp {
+  background: #478bf9;
+}
