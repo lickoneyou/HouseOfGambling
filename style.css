@@ -342,9 +342,80 @@ main {
 /* footer */
 
 footer {
-  padding: 40px 140px 24px 140px;
-  border-radius: 64px 64px 0px 0px;
+  padding: 3.6rem 13.6rem 2.4rem 13.6rem;
+  border-radius: 6.4rem 6.4rem 0px 0px;
   border-top: 4px solid #478bf9;
   border-right: 4px solid #478bf9;
   border-left: 4px solid #478bf9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 0.8rem;
+}
+
+.imgWrapper:last-child {
+  margin-right: 0;
+}
+
+.imgWrapper > svg {
+  position: absolute;
+}
+
+.imgWrapper img {
+  position: relative;
+  z-index: 1;
+}
+
+path {
+  transition: all 500ms ease;
+}
+
+.imgWrapper:hover path {
+  fill: orangered;
+}
+
+.socialLinks {
+  display: flex;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 60rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  transition: all 500ms ease;
+}
+
+.footerLinks *:hover {
+  transition: all 500ms ease;
+  color: #478bf9;
+}
+
+.footerLinks *:after {
+  background-color: #478bf9;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social > p {
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 1.4rem;
 }
