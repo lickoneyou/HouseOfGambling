@@ -3,8 +3,17 @@
   src: url("./assets/fonts/FuturaPT-Light.ttf");
 }
 
+.popUp {
+  display: none;
+}
+
+.nav320 {
+  display: none;
+  cursor: pointer;
+}
+
 html {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
   scroll-behavior: smooth;
   font-family: "Lexend", sans-serif;
@@ -418,4 +427,150 @@ path {
   font-weight: 400;
   line-height: 2rem;
   margin-bottom: 1.4rem;
+}
+
+@media all and (max-device-width: 1070px) {
+  .logoWrapper {
+    display: none;
+  }
+}
+
+@media all and (max-device-width: 970px) {
+  header {
+    padding: 1.6rem 12rem 0 12rem;
+  }
+
+  .mainWrapper {
+    padding: 12rem 2rem 23rem 2rem;
+  }
+}
+
+@media all and (max-device-width: 880px) {
+  header {
+    padding: 1.6rem 2rem 0 2rem;
+    height: 120px;
+  }
+
+  .mainWrapper {
+    padding: 2rem 2rem 2rem 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainTitle {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .mainTitle h1,
+  .mainTitle h3 {
+    text-align: center;
+  }
+
+  main {
+    height: 1090px;
+  }
+
+  .slidersWrapper {
+    transform: rotate(90deg);
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .slide > img {
+    transform: rotate(180deg);
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footerLinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social > p {
+    text-align: start;
+    margin-top: 20px;
+  }
+}
+
+@media all and (max-device-width: 788px) {
+  nav,
+  .logIn,
+  .singUp {
+    display: none;
+  }
+
+  .btnsWrapper {
+    width: 10rem;
+  }
+  .headerWrapper {
+    justify-content: flex-end;
+    z-index: 2000;
+    position: relative;
+  }
+
+  header {
+    position: relative;
+    z-index: 2000;
+  }
+
+  .nav320 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    z-index: 2000;
+    transition: all 500ms ease;
+  }
+
+  .popUp > nav {
+    display: block;
+    position: relative;
+  }
+
+  .popUp > nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .popUp {
+    position: fixed;
+    background: #110A1D;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 500ms ease;
+    color: black;
+    z-index: 1000;
+    overflow: hidden;
+  }
+
+  .popUp li {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 43px;
+  }
+
+  .popUp li:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav320 span {
+    width: 30px;
+    height: 3px;
+    background-color: #cdcdcd;
+    cursor: pointer;
+  }
 }

@@ -139,3 +139,24 @@ blogWrapper.addEventListener("scroll", function () {
     }
   });
 });
+
+
+// popUp
+
+const popUpBtn = document.querySelector(".nav320");
+const popUp = document.querySelector(".popUp");
+const headerWrapper = document.querySelector(".headerWrapper");
+
+popUpBtn.addEventListener("click", function () {
+  if (this.style.transform === "rotate(90deg)") {
+    this.style.transform = "rotate(0deg)";
+    popUp.style.width = "0";
+    headerWrapper.style.position = 'relative'
+    headerWrapper.style.width = 'auto'
+  } else {
+    this.style.transform = "rotate(90deg)";
+    popUp.style.width = '100%';
+    headerWrapper.style.position = 'fixed'
+    headerWrapper.style.width = '94.2%'
+  }
+});
