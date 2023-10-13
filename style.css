@@ -165,15 +165,6 @@ main {
   }
 }
 
-@keyframes scrollreverse {
-  0% {
-    transform: translateY(calc(-154px * 8));
-  }
-  100% {
-    transform: translateY(10000px);
-  }
-}
-
 .slider {
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   margin: auto;
@@ -210,16 +201,12 @@ main {
   width: calc(250px * 16);
 }
 
-.sliderReverse {
+.sliderReverse, .slideReverse > img {
   transform: rotate(180deg);
 }
 
 .slider .slide {
   margin-top: 23px;
-}
-
-.slideReverse > img {
-  transform: rotate(180deg);
 }
 
 .slidersWrapper {
