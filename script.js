@@ -66,37 +66,40 @@ const slider3 = [
 function createSlider(slider1, slider2, slider3) {
   const res = `
 <div class="slider">
-<div class="slide-track">
-${slider1
-  .map(
-    (el) => `<div class='slide'>
-    <img src=${el} alt='slidePic'/>
-</div>`
-  )
-  .join("")}
-</div>
+  <div class="slide-track">
+    ${slider1
+      .map(
+        (el) => `
+        <div class='slide'>
+          <img src=${el} alt='slidePic'/>
+        </div>`
+      )
+      .join("")}
+  </div>
 </div>
 <div class="slider sliderReverse">
-<div class="slide-track slide-trackReverse">
-${slider2
-  .map(
-    (el) => `<div class='slide slideReverse'>
-    <img src=${el} alt='slidePic'/>
-</div>`
-  )
-  .join("")}
-</div>
+  <div class="slide-track slide-trackReverse">
+     ${slider2
+       .map(
+         (el) => `
+         <div class='slide slideReverse'>
+           <img src=${el} alt='slidePic'/>
+         </div>`
+       )
+       .join("")}
+  </div>
 </div>
 <div class="slider">
-<div class="slide-track">
-${slider3
-  .map(
-    (el) => `<div class='slide'>
-    <img src=${el} alt='slidePic'/>
-</div>`
-  )
-  .join("")}
-</div>
+  <div class="slide-track">
+    ${slider3
+      .map(
+        (el) => `
+        <div class='slide'>
+          <img src=${el} alt='slidePic'/>
+        </div>`
+      )
+      .join("")}
+  </div>
 </div>
 `;
   return res;
@@ -104,3 +107,35 @@ ${slider3
 
 const slidersWrapper = document.querySelector(".slidersWrapper");
 slidersWrapper.innerHTML = createSlider(slider1, slider2, slider3);
+
+// blog
+
+const addPost = (numberOfPosts = 1) => {
+  const post = `
+  <div class='post'>
+    <p class='message'>Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+    <p class='postDate'>10.02.2023</p>
+  </div>`;
+  return post.repeat(numberOfPosts);
+};
+
+const blogWrapper = document.querySelector(".blogWrapper");
+
+blogWrapper.innerHTML += addPost(10);
+
+blogWrapper
+  .querySelectorAll(".post")
+  .forEach((el, ind) =>
+    ind === 0 ? (el.style.background = "#478BF9") : false
+  );
+
+blogWrapper.addEventListener("scroll", function () {
+  const scroll = blogWrapper.scrollTop;
+  blogWrapper.querySelectorAll(".post").forEach((el, ind) => {
+    if (ind * 114 <= scroll) {
+      el.style.background = "#478BF9";
+    } else {
+      el.style.background = "#1E1231";
+    }
+  });
+});

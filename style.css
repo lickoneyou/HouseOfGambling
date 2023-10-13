@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "FuturaPT-Light";
+  src: url("./assets/fonts/FuturaPT-Light.ttf");
+}
+
 html {
   width: 1920px;
   margin: 0 auto;
@@ -136,6 +141,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  z-index: -10;
 }
 
 .layerRight {
@@ -172,6 +178,7 @@ main {
   position: relative;
   width: 10.0368rem;
   height: 129.822rem;
+  user-select: none;
 }
 .slider::before,
 .slider::after {
@@ -201,16 +208,131 @@ main {
   width: calc(25rem * 16);
 }
 
-.sliderReverse, .slideReverse > img {
+.sliderReverse,
+.slideReverse > img {
   transform: rotate(180deg);
+  user-select: none;
 }
 
 .slider .slide {
   margin-top: 2.3rem;
+  user-select: none;
 }
 
 .slidersWrapper {
   display: flex;
-  width: 33.3798rem;
-  margin: 0 auto;
+  width: 34.998rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 130px;
+  right: 0;
+  user-select: none;
+}
+
+.mainWrapper {
+  padding: 14rem 13.3rem 23rem 14.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainTitle {
+  width: 669px;
+  padding-top: 15.6rem;
+  z-index: 1;
+}
+
+.mainTitle h1 {
+  font-size: 9.6rem;
+  font-weight: 500;
+  line-height: 9.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.mainTitle h1 > span {
+  color: #478bf9;
+}
+
+.mainTitle h3 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.mainTitle button {
+  border-radius: 4.8rem;
+  background: #478bf9;
+  padding: 2rem 7.2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+}
+
+.mainBlog {
+  width: 531px;
+}
+
+.mainBlog h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.blogWrapper {
+  height: 59.5rem;
+  border-radius: 100px;
+  border: 3px solid #478bf9;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  padding: 2.4rem 2rem 0 2.4rem;
+  overflow-y: scroll;
+}
+
+.blogWrapper::-webkit-scrollbar {
+  display: block;
+  width: 20px;
+  border-radius: 10px;
+}
+.blogWrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.blogWrapper::-webkit-scrollbar-thumb {
+  border-left: 8px solid #478bf9;
+}
+
+.blogWrapper::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 100px;
+}
+
+.blogWrapper::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 100px;
+}
+
+.post {
+  padding: 1.6rem 6.4rem;
+  border-radius: 196px;
+  background: #1e1231;
+  margin-bottom: 1.6rem;
+}
+
+.message {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.postDate {
+  font-family: FuturaPT-Light;
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 16px;
 }
