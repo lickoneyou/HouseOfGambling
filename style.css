@@ -69,6 +69,7 @@ nav > ul {
   align-items: center;
   margin-right: 3rem;
   cursor: pointer;
+  transition: all 500ms ease;
 }
 
 .langEn *:first-child,
@@ -92,4 +93,8 @@ nav > ul {
 
 .singUp {
   background: #478bf9;
+}
+
+.active {
+  margin-left: -60px;
 }
