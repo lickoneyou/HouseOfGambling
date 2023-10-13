@@ -148,8 +148,8 @@ main {
 }
 
 .layerLeft {
-  width: 574px;
-  height: 574px;
+  width: 57.4rem;
+  height: 57.4rem;
   border-radius: 574px;
   opacity: 0.7;
   background: linear-gradient(256deg, #478bf9 0%, #9dadf2 100%);
@@ -161,7 +161,7 @@ main {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(calc(-154px * 8));
+    transform: translateY(calc(-15.4rem * 8));
   }
 }
 
@@ -170,8 +170,8 @@ main {
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 100.368px;
-  height: 1298.22px;
+  width: 10.0368rem;
+  height: 129.822rem;
 }
 .slider::before,
 .slider::after {
@@ -182,7 +182,7 @@ main {
   );
   content: "";
   position: absolute;
-  width: 200px;
+  width: 20rem;
   z-index: 2;
 }
 .slider::after {
@@ -198,7 +198,7 @@ main {
   animation: scroll 30s linear infinite;
   display: flex;
   flex-direction: column;
-  width: calc(250px * 16);
+  width: calc(25rem * 16);
 }
 
 .sliderReverse, .slideReverse > img {
@@ -206,11 +206,11 @@ main {
 }
 
 .slider .slide {
-  margin-top: 23px;
+  margin-top: 2.3rem;
 }
 
 .slidersWrapper {
   display: flex;
-  width: 333.798px;
+  width: 33.3798rem;
   margin: 0 auto;
 }
