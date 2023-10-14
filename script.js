@@ -140,23 +140,32 @@ blogWrapper.addEventListener("scroll", function () {
   });
 });
 
-
 // popUp
 
 const popUpBtn = document.querySelector(".nav320");
 const popUp = document.querySelector(".popUp");
 const headerWrapper = document.querySelector(".headerWrapper");
 
+const span1 = document.querySelector(".span1");
+const span2 = document.querySelector(".span2");
+const span3 = document.querySelector(".span3");
+
 popUpBtn.addEventListener("click", function () {
-  if (this.style.transform === "rotate(90deg)") {
-    this.style.transform = "rotate(0deg)";
+  if (popUp.style.width == "100%") {
+    span1.style.transform = "rotate(0)";
+    span2.style.display = "block";
+    span3.style.transform = "rotate(0)";
     popUp.style.width = "0";
-    headerWrapper.style.position = 'relative'
-    headerWrapper.style.width = 'auto'
+    headerWrapper.style.position = "relative";
+    headerWrapper.style.width = "auto";
+    popUp.style.padding = "0";
   } else {
-    this.style.transform = "rotate(90deg)";
-    popUp.style.width = '100%';
-    headerWrapper.style.position = 'fixed'
-    headerWrapper.style.width = '94.2%'
+    span1.style.transform = "rotate(45deg) translate(12px, 0px)";
+    span2.style.display = "none";
+    span3.style.transform = "rotate(135deg) translate(-12px, 0px)";
+    popUp.style.width = "100%";
+    headerWrapper.style.position = "fixed";
+    headerWrapper.style.width = "94.2%";
+    popUp.style.padding = "150px 10px 92px 10px";
   }
 });

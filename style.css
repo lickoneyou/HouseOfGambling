@@ -429,13 +429,13 @@ path {
   margin-bottom: 1.4rem;
 }
 
-@media all and (max-device-width: 1070px) {
+@media all and (max-device-width: 1250px) {
   .logoWrapper {
     display: none;
   }
 }
 
-@media all and (max-device-width: 970px) {
+@media all and (max-device-width: 1050px) {
   header {
     padding: 1.6rem 12rem 0 12rem;
   }
@@ -445,7 +445,7 @@ path {
   }
 }
 
-@media all and (max-device-width: 880px) {
+@media all and (max-device-width: 980px) {
   header {
     padding: 1.6rem 2rem 0 2rem;
     height: 120px;
@@ -499,7 +499,7 @@ path {
   }
 }
 
-@media all and (max-device-width: 788px) {
+@media all and (max-device-width: 810px) {
   nav,
   .logIn,
   .singUp {
@@ -529,23 +529,27 @@ path {
     transition: all 500ms ease;
   }
 
+  .nav320 * {
+    transition: all 500ms ease;
+  }
+
   .popUp > nav {
     display: block;
     position: relative;
+    margin-bottom: 30px;
   }
 
   .popUp > nav > ul {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    width: auto;
   }
 
   .popUp {
     position: fixed;
-    background: #110A1D;
+    background: #110a1d;
     right: -100%;
     top: 0;
-    height: 100vh;
     width: 0;
     right: 0;
     display: flex;
@@ -558,9 +562,13 @@ path {
   }
 
   .popUp li {
-    font-size: 32px;
-    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
     margin-bottom: 43px;
+    padding: 13px 20px;
+    border-radius: 28px;
+    border: 2px solid #478bf9;
   }
 
   .popUp li:last-child {
@@ -572,5 +580,21 @@ path {
     height: 3px;
     background-color: #cdcdcd;
     cursor: pointer;
+  }
+
+  .footerLinks {
+    width: auto;
+  }
+
+  .logInPopup {
+    margin-bottom: 5px;
+  }
+
+  .logInPopup,
+  .singUpPopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
   }
 }
