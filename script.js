@@ -160,12 +160,12 @@ popUpBtn.addEventListener("click", function () {
     headerWrapper.style.width = "auto";
     popUp.style.padding = "0";
   } else {
-    span1.style.transform = "rotate(45deg) translate(12px, 0px)";
+    span1.style.transform = "rotate(45deg) translate(26%, 0px)";
     span2.style.display = "none";
-    span3.style.transform = "rotate(135deg) translate(-12px, 0px)";
+    span3.style.transform = "rotate(135deg) translate(-26%, 0px)";
     popUp.style.width = "100%";
     headerWrapper.style.position = "fixed";
-    headerWrapper.style.width = "94.2%";
+    headerWrapper.style.width = "90vw";
     popUp.style.padding = "150px 10px 92px 10px";
   }
 });

@@ -429,13 +429,13 @@ path {
   margin-bottom: 1.4rem;
 }
 
-@media all and (max-device-width: 1250px) {
+@media all and (max-device-width: 1520px) {
   .logoWrapper {
     display: none;
   }
 }
 
-@media all and (max-device-width: 1050px) {
+@media all and (max-device-width: 1350px) {
   header {
     padding: 1.6rem 12rem 0 12rem;
   }
@@ -445,7 +445,7 @@ path {
   }
 }
 
-@media all and (max-device-width: 980px) {
+@media all and (max-device-width: 1230px) {
   header {
     padding: 1.6rem 2rem 0 2rem;
     height: 120px;
@@ -469,7 +469,7 @@ path {
   }
 
   main {
-    height: 1090px;
+    height: 1109px;
   }
 
   .slidersWrapper {
@@ -499,7 +499,7 @@ path {
   }
 }
 
-@media all and (max-device-width: 810px) {
+@media all and (max-device-width: 1120px) {
   nav,
   .logIn,
   .singUp {
@@ -596,5 +596,180 @@ path {
     justify-content: center;
     align-items: center;
     color: #fff;
+  }
+
+  .mainTitle {
+    width: auto;
+  }
+}
+
+@media all and (max-device-width: 580px) {
+  .mainTitle button {
+    padding: 10px 20px;
+  }
+  .mainTitle {
+    width: auto;
+    align-items: center;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .layers {
+    overflow: hidden;
+  }
+}
+
+@media all and (max-device-width: 570px) {
+  header {
+    padding: 1rem;
+    height: 95px;
+  }
+
+  .headerWrapper {
+    padding: 1rem 1.4rem;
+    border: 2px solid #478bf9;
+    height: auto;
+  }
+
+  .nav320 {
+    height: 28px;
+    width: 28px;
+    justify-content: space-evenly;
+    margin-left: 8px;
+  }
+
+  .nav320 span {
+    width: 25px;
+    height: 2px;
+  }
+
+  .lang {
+    padding: 8px;
+    padding-left: 6px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .lang img {
+    min-width: 20px;
+    min-height: 20px;
+    object-fit: cover;
+  }
+
+  .lang p {
+    display: none;
+  }
+
+  .btnsWrapper {
+    justify-content: flex-end;
+  }
+
+  .mainTitle h1 {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 1.4rem;
+  }
+
+  .mainTitle h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 2.4rem;
+  }
+
+  .mainWrapper {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .mainTitle button {
+    font-size: 18px;
+    width: 300px;
+    margin-bottom: 230px;
+  }
+
+  .slider {
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 4.8rem;
+    height: 110.822rem;
+    user-select: none;
+    margin: 0 10px 9px 0;
+  }
+
+  .slide {
+    width: 4.8rem;
+  }
+
+  .slidersWrapper {
+    top: -68px;
+  }
+
+  .mainBlog h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  .mainBlog {
+    width: auto;
+  }
+
+  .blogWrapper {
+    width: 300px;
+    height: 421px;
+    border: 2px solid #478bf9;
+    border-radius: 50px;
+    padding: 1rem;
+  }
+
+  .post {
+    padding: 15px 31px;
+  }
+
+  .message {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .postDate {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+    border-radius: 50px 50px 0px 0px;
+    border-top: 2px solid #478bf9;
+    border-right: 2px solid #478bf9;
+    border-left: 2px solid #478bf9;
+  }
+
+  footer * {
+    font-size: 14px;
+  }
+
+  footer li {
+    margin-bottom: 2px;
+  }
+
+  .imgWrapper {
+    width: 27px;
+    height: 27px;
+  }
+
+  .social > p {
+    font-size: 14px;
+  }
+
+  .footerLinks {
+    margin-bottom: -4px;
   }
 }
